@@ -8,7 +8,7 @@ $handle = fopen("measurements.txt", "r");
 $lineCount = 0;
 if ($handle) {
     while (!feof($handle)) {
-        fgets($handle);
+        $line = fgets($handle);
         $lineCount++;
     }
     fclose($handle);
