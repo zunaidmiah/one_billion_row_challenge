@@ -1,7 +1,7 @@
 <?php
 // 321 seconds
 $start_time = microtime(true);
-$handle = fopen("measurements.txt", "r");
+$handle = fopen("new.txt", "r");
 $processedData = [];
 if ($handle) {
     while (($line = fgets($handle)) !== false) {
